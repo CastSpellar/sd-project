@@ -4,13 +4,10 @@
 ===Ano lectivo: 2006/2007===
 (versão 1.0)
 
-#1 Sinopse
-O trabalho consiste no desenvolvimento de um sistema que permita a visu-
-aliza»c~ao/audi»c~ao de ¯cheiros multim¶edia disponibilizados por m¶ultiplos uti-
-lizadores.
+ # ===Sinopse=== O trabalho consiste no desenvolvimento de um sistema que permita a visualização/audição de ficheiros multimédia disponibilizados por múltiplos utilizadores.
 
-#2 Contexto
-O contexto de implanta»c~ao do sistema ¶e o de uma organiza»c~ao em que a
+ # Contexto
+  O contexto de implanta»c~ao do sistema ¶e o de uma organiza»c~ao em que a
 maioria dos utilizadores utilizam computadores pessoais ligados por uma
 rede local interna de elevada capacidade.
 Sup~oe-se que n~ao existe, no sistema, nenhuma m¶aquina com capacidade
@@ -19,7 +16,7 @@ disponibilizados por todos os utilizadores. Cada utilizador disp~oe de alguma
 capacidade de armazenamento que pode ser usada pelo sistema a implemen-
 tar.
 
-#3 Objectivos
+ # Objectivos
 3.1 Objectivos gerais
 Pretende-se com este sistema permitir aos utilizadores o acesso aos conte¶udos
 multim¶edia disponibilizados por todos os participantes do sistema. O sistema
@@ -27,7 +24,7 @@ deve ser desenhado de forma a permitir melhorar a disponibilidade dos recur-
 sos mais populares e a manter a carga dos clientes que disponibilizam estes
 recursos em valores razo¶aveis, permitindo assim um bom desempenho.
 
-#4 Arquitectura geral
+ # Arquitectura geral
 As caracter¶³sticas espec¶³¯cas da arquitectura do sistema s~ao completamente
 livres, exceptuando o facto do sistema se integrar com a interface gr¶a¯ca
 disponibilizada atrav¶es da interface de¯nida pela mesma.
@@ -36,7 +33,7 @@ nentes do sistema s~ao completamente livres. ¶E permitido, tamb¶em, combinar
 v¶arias tecnologias de suporte µa comunica»c~ao: UDP, TCP, RMI e IP Multi-
 cast.
 
-#5 Fases do trabalho
+ # Fases do trabalho
 Fase 1 A primeira fase consiste num relat¶orio com o desenho preliminar do
 sistema, de acordo com um relat¶orio modelo disponibilizado para o efeito.
 A entrega ser¶a efectuada de acordo com as regras a especi¯car oportuna-
@@ -52,7 +49,7 @@ lat¶orios modelo disponibilizados para o efeito.
 A entrega ser¶a efectuada de forma electr¶onica, de acordo com as regras a
 especi¯car oportunamente.
 
-#6 Datas Importantes
+ # Datas Importantes
 Fase 1 A primeira fase do trabalho deve ser entregue at¶e µas 11:00 do dia
 25 de Mar»co de 2007.
 Os trabalhos entregues a seguir a esta data t^em uma penaliza»c~ao na nota
@@ -70,14 +67,14 @@ de Maio de 2007.
 Os trabalhos entregues ap¶os esta data t^em uma penaliza»c~ao na nota ¯nal
 do trabalho de 0,05 valores por hora (ou frac»c~ao de hora).
 
-#7 Ambiente de execu»c~ao
+ # Ambiente de execu»c~ao
 O trabalho dever¶a executar em ambiente Linux, usando a vers~ao JDK 6.0 da
 linguagem Java. Com este enunciado ser¶a fornecido um conjunto de classes
 que implementam uma interface gr¶a¯ca a incorporar na solu»c~ao a desenvolver.
 Nota: Para evitar con°itos, os alunos devem utilizar o n¶umero de aluno
 para os portos a usar pelo sistema (sockets, rmiregistry, etc.).
 
-#8 Funcionalidades
+ # Funcionalidades
 8.1 Funcionalidades B¶asicas [12 valores]
 O sistema a implementar deve permitir a um utilizador disponibilizar um
 conjunto de ¯cheiro para acesso por outros utilizadores. O utilizador que
@@ -173,3 +170,5 @@ A detalhar oportunamente.
 
 8.4 Funcionalidades Opcionais [Grupo C]
 A detalhar oportunamente.
+
+
