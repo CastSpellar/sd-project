@@ -1,10 +1,11 @@
 #labels Phase-Design,Phase-Implementation
-=Sistemas Distribuídos=
-==Trabalho Prático==
-===Ano lectivo: 2006/2007===
-(versão 1.0)
+#a
+#b
+#c
 
- # ===Sinopse=== O trabalho consiste no desenvolvimento de um sistema que permita a visualização/audição de ficheiros multimédia disponibilizados por múltiplos utilizadores.
+
+ # ===Sinopse=== 
+O trabalho consiste no desenvolvimento de um sistema que permita a visualização/audição de ficheiros multimédia disponibilizados por múltiplos utilizadores.
 
  # Contexto
   O contexto de implanta»c~ao do sistema ¶e o de uma organiza»c~ao em que a
@@ -170,5 +171,4 @@ A detalhar oportunamente.
 
 8.4 Funcionalidades Opcionais [Grupo C]
 A detalhar oportunamente.
-
 
