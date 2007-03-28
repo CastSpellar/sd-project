@@ -2,6 +2,7 @@ package aula5;
 
 import java.io.*;
 import java.rmi.*;
+import java.rmi.registry.LocateRegistry;
 import java.rmi.server.*;
 
 public class FileServerImpl extends UnicastRemoteObject implements IFileServer
@@ -24,6 +25,13 @@ public class FileServerImpl extends UnicastRemoteObject implements IFileServer
 
 			if( System.getSecurityManager() == null) {
 				System.setSecurityManager( new RMISecurityManager());
+			}
+			
+			try { // if registry has not been started with "rmiregistry" command
+				// start it
+				LocateRegistry.createRegistry( 1099);
+			} catch( RemoteException e) { // if not start it
+				// do nothing
 			}
 			
 			if( args.length != 0) {
