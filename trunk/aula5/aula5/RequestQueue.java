@@ -1,5 +1,7 @@
 package aula5;
 
+import java.io.IOException;
+import java.rmi.RemoteException;
 import java.util.*;
 
 public class RequestQueue implements Runnable {
@@ -18,10 +20,36 @@ public class RequestQueue implements Runnable {
 			queue.notify();
 		}
 	}
+	
+	public Request remove() {
+		synchronized( queue ) {
+			while( queue.isEmpty())
+				try {
+					queue.wait();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+		 return queue.removeFirst();
+		}
+	}
 
 	public void run() {
+		Request r;
 		for (;;) {
-			// TODO: Retirar o pedido da fila e processa-lo
+			
+			r = remove();
+		
+				try {
+					r.callback.putFile(new FileToTransfer(r.filename));
+				} catch (RemoteException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			
+			
 		}
 	}
 }

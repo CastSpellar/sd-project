@@ -27,12 +27,13 @@ public class FileServerImpl extends UnicastRemoteObject implements IFileServer
 			}
 			
 			if( args.length != 0) {
-				System.err.println( "Use: java aula3.FileServerImpl");
+				System.err.println( "Use: java aula5.FileServerImpl");
 				System.exit( 0);
 			}
 			
 			Naming.rebind( "/myFileServer", new FileServerImpl());
 			System.out.println( "FileServer bound in registry");
+			
 		} catch( Throwable th) {
 			th.printStackTrace();
 		}
