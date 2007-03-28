@@ -16,7 +16,7 @@ public class FileClient {
         String serverHost = args[0];
        
         try {
-    		System.getProperties().put( "java.security.policy", "aula3/policy.all");
+    		System.getProperties().put( "java.security.policy", "aula5/policy.all");
     		
     		if( System.getSecurityManager() == null) {
     			System.setSecurityManager( new RMISecurityManager());
